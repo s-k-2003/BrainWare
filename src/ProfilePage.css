@@ -1,0 +1,465 @@
+/* Idea List Styles */
+.idea-list {
+  /* Container */
+  border: 1px solid #ccc;
+  background-color: black;
+  padding: 16px;
+  max-width: 22em;
+  max-height: 45em;
+  margin-top: 1em;
+  border-radius: 10px;
+}
+
+.idea-list h3 {
+  /* Heading */
+  color: lightgreen;
+  margin-top: 0;
+}
+
+.idea-list button {
+  /* Button */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 14em;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.idea-list button:hover {
+  /* Button - Hover state */
+  background-color: #0056b3;
+}
+
+
+/* Idea History Styles */
+.idea-history {
+  /* List */
+  list-style-type: none;
+  padding: 0;
+}
+
+.idea-history li {
+  /* List Item */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  background-color: black;
+  border-radius: 4px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+}
+
+
+
+
+.idea-history .username-container {
+  /* Username Container */
+  display: flex;
+  align-items: center;
+}
+
+
+.idea-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.idea-title {
+  font-weight: bold;
+}
+
+.idea-day {
+  color: gray;
+}
+
+.group {
+  margin-bottom: 0px;
+}
+
+.group h4 {
+  color: gray;
+  font-size: 10px;
+  font-weight: bold;
+  cursor:default;
+  
+}
+
+.group div {
+  cursor: pointer;
+  padding: 5px;
+  font-size: 14px;
+  color: whitesmoke;
+  background-color: transparent;
+  border-radius: 4px;
+  
+}
+
+.group div:hover {
+  background-color: transparent;
+}
+
+
+
+.username-container .username{
+  /* Username */
+  font-size: 18px;
+  color: lightgreen;
+  right: 8px;
+  font-weight: bold;
+}
+
+.username-container p{
+  /* Paragraph */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 14px;
+  color: white;
+}
+
+.username-container label{
+  /* Label */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: -10%;
+  right: 8px;
+}
+
+.idea-history .username {
+  /* Username */
+  font-size: 18px;
+  color: lightgreen;
+  right: 8px;
+  font-weight: bold;
+}
+
+.idea-history .edit-button {
+  /* Edit Button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+
+/* Popup CSS */
+
+/* Lock Modal Styles */
+.lockmodal {
+  /* Lock Modal Container */
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.lockmodal-content {
+  /* Lock Modal Content */
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 500px;
+}
+
+.lockclose {
+  /* Lock Modal Close Button */
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lockclose:hover,
+.lockclose:focus {
+  /* Lock Modal Close Button - Hover/Focus state */
+  color: black;
+  text-decoration: none;
+}
+
+.lockmodal-content h3 {
+  /* Lock Modal Heading */
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+}
+
+.lockmodal-content li {
+  /* Lock Modal List Item */
+  font-size: 1.5em;
+  font-weight: 500;
+  color: black;
+}
+
+.delete-button {
+  /* Delete Button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  /* Delete Button - Hover state */
+  background-color: red;
+}
+
+.share-button{
+  background-color: rgb(70, 183, 70);
+  color: white;
+  border: none;
+  text-align: center;
+  width: 3em;
+  height: 1.5em;
+  border-radius: 5px;
+  margin-left: 20em;
+  font-size: 20px;
+  cursor: pointer
+}
+
+/* Change Password Modal Styles */
+.pmodal {
+  /* Password Modal Container */
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pmodal-content {
+  /* Password Modal Content */
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 5px;
+}
+
+.pclose {
+  /* Password Modal Close Button */
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pclose:hover,
+.pclose:focus {
+  /* Password Modal Close Button - Hover/Focus state */
+  color: black;
+  text-decoration: none;
+}
+
+.p form {
+  /* Password Modal Form */
+  margin-top: 20px;
+}
+
+.p label {
+  /* Password Modal Label */
+  display: block;
+  margin-bottom: 8px;
+}
+
+.p input[type="text"] {
+  /* Password Modal Text Input */
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: not-allowed;
+}
+
+.p input[type="password"] {
+  /* Password Modal Password Input */
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.p button[type="submit"] {
+  /* Password Modal Submit Button */
+  background-color: lightgreen;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.changepassword-button {
+  /* Change Password Button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.changepassword-button:hover {
+  /* Change Password Button - Hover state */
+  background-color: lightgreen;
+}
+
+.change-password-btn {
+  /* Change Password Button */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/*Club*/
+
+.clubcontainer{
+  margin-left: 62em;
+  margin-top: -30em;
+}
+
+.createclub_btn{
+  position: relative;
+  background-color: #45a049;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.clubpopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clubpopup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.clubpopup h2 {
+  margin-top: 0;
+}
+
+.clubpopup form {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup form div {
+  margin-bottom: 10px;
+}
+
+.clubpopup form label {
+  font-weight: bold;
+}
+
+.clubpopup form input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.clubpopup form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.clubpopup form button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.club {
+  background-color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.club h3 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.club p{
+  color: whitesmoke;
+  font-size: 12px;
+
+}
+
+.clubpopup form button:hover {
+  background-color: #45a049;
+}
+
+.joinclubbtn{
+  position: relative;
+  background-color: rgb(32, 128, 160);
+  margin-left: 2em;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.createclose{
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: -0.5em;
+  margin-top: -0.7em;
+}

@@ -1,0 +1,126 @@
+.body2{
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+    background: linear-gradient(to bottom right, #22a6f0 70%, black 30%);
+    position: fixed;
+    min-height: 150vh;
+    min-width: 200vh;
+}
+.logoutbtn{
+width: 10%;
+  height: 3em;
+  background-color: transparent;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.logoutbtn:hover{
+    transform: scale(1.25);
+}
+.ideabtn{
+    width: 10%;
+  height: 3em;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+}
+.ideabtn:hover{
+    transform: scale(1.25);
+}
+.randombtnpos{
+    margin-left: 5em;
+    margin-top: 5em;
+}
+
+
+.designtext h1{
+    font-size: 3em;
+    font-weight: 500;
+    color: black;
+}
+.designtext p{
+    font-size: 1.5em;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.paraposdesign{
+    margin-top:-3.4em;
+    margin-left: 12em;
+}
+.paraposfor{
+    margin-top: -3.5em;
+    margin-left: 8em;
+}
+.descrptionbtn{
+    width: 10%;
+  height: 3em;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+    margin-top: 5em;
+    margin-left: 23em;
+}
+.descrptionbtn:hover{
+    transform: scale(1.25);
+}
+.lockbtn{
+    width: 20%;
+  height: 3em;
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 0.25em;
+  cursor: pointer;
+    margin-left: 13em;
+}
+.lockbtn:hover{
+    transform: scale(1.25);
+}
+.iconlock{
+    margin-left: 20em;
+    width: 100%;
+
+}
+
+.ideapopup-container {
+    position: relative;
+  }
+  
+  .ideapopup {
+    position: absolute;
+    top: -10em;
+    left: 35em;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .tick-mark {
+    font-size: 24px;
+    color: #009900;
+    margin-bottom: 10px;
+  }
+  

@@ -1,0 +1,122 @@
+.navbar1 {
+  width: 91.5em;
+  height: 5.5em;
+  margin-top: 0;
+  left: 5em;
+  right: 1em;
+  background-color: transparent;
+}
+
+.navbar1 p {
+  float: right;
+  text-align: center;
+  background-color: transparent;
+  padding: 30px;
+  margin-top: 0.5em;
+  color: black;
+  transition: 0.5s;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbar1 button {
+  float: right;
+  text-align: center;
+  margin-top: 1em;
+  font-size: 22px;
+  border-style: none;
+}
+
+.navbar1 p:hover {
+  transform: scale(1.2);
+}
+
+.navbar1 a:hover {
+  text-decoration: underline;
+  text-decoration-color: #22A6F0;
+}
+
+.navbar1 .lg {
+  float: right;
+  margin-top: 1.5em;
+}
+
+.navbar1 label {
+  float: left;
+  text-align: center;
+  background-color: transparent;
+  padding: 1.5em;
+  margin-top: 0;
+  margin-left: -2.2em;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.navbar1 img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-top: 0.5em;
+  margin-left: 2em;
+  cursor: pointer;
+}
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+  .navbar1 {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+  }
+
+  .navbar1 p {
+    display: none;
+  }
+
+  .navbar1 button {
+    display: block;
+    font-size: 22px;
+    border-style: none;
+  }
+
+  .navbar1 .lg {
+    margin-top: 0.5em;
+  }
+
+  .navbar1 img {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar1 {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+  }
+
+  .navbar1 p {
+    display: block;
+    float: none;
+    text-align: left;
+    padding: 10px;
+    margin-top: 0.5em;
+    font-size: 18px;
+  }
+
+  .navbar1 button {
+    display: none;
+  }
+
+  .navbar1 .lg {
+    margin-top: 0.5em;
+  }
+
+  .navbar1 img {
+    margin: 0;
+    float: none;
+    display: block;
+    margin-bottom: 0.5em;
+  }
+}
